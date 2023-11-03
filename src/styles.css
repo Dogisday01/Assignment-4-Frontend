@@ -1,0 +1,28 @@
+@font-face {
+	font-family: 'Open Sans';
+	src:         local('Open Sans');
+	src:         url('./css-fonts/OpenSans-Regular.ttf');
+}
+
+@font-face {
+	font-family: 'IBM Plex Sans';
+	src:         local('IBM Plex Sans');
+	src:         url('./css-fonts/IBMPlexSans-Regular.ttf');
+}
+
+@font-face {
+	font-family: 'Roboto';
+	src:         local('Roboto');
+	src:         url('./css-fonts/Roboto-Regular.ttf');
+}
+
+
+.header {
+	font-family: 'Open Sans', 'Roboto', sans-serif;
+	font-style:  normal;
+}
+
+.description {
+	font-family: 'IBM Plex Sans', sans-serif;
+	font-style:  normal;
+}
