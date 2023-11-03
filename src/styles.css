@@ -1,3 +1,16 @@
+h1 {
+	text-align: center;
+}
+
+.header {
+	font-family: "Open Sans", "Roboto", sans-serif !important;
+	font-style: normal !important;
+}
+.description {
+	font-family: "IBM Plex Sans", sans-serif;
+	font-style: normal;
+}
+
 @font-face {
 	font-family: 'Open Sans';
 	src:         local('Open Sans');
