@@ -29,19 +29,13 @@ h1 {
 	src:         url('font/Roboto-Regular.ttf');
 }
 
-
-.header {
-	font-family: 'Open Sans', 'Roboto', sans-serif;
-	font-style:  normal;
-}
-
-.description {
-	font-family: 'IBM Plex Sans', sans-serif;
-	font-style:  normal;
-}
-
 body {
 	background-image: url("assets/background.png");
 	background-size: cover;
 	background-repeat: no-repeat;
+}
+
+.nav-bar{
+	position: sticky;
+	top: 0;
 }
