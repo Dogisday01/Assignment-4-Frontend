@@ -35,7 +35,36 @@ body {
 	background-repeat: no-repeat;
 }
 
-.nav-bar{
+.nav-bar {
 	position: sticky;
 	top: 0;
+}
+
+.navbar {
+	background-image: linear-gradient(to right, #fff, #fff, #f8f7ff, #f8f7ff, #b8b8ff, #9381ff);
+}
+
+.navbar-brand img {
+	height: 40px;
+	padding-left: 20px;
+}
+
+.navbar-nav li {
+	padding: 0 10px;
+}
+
+.navbar-nav li a {
+	color: #f8f7ff !important;
+	font-weight: 600;
+}
+
+@media (max-width: 991.99px) {
+	.navbar-nav li a {
+		color: #9381ff !important;
+		font-weight: 600;
+	}
+}
+
+.navbar-toggler {
+	border: 0 solid transparent !important;
 }
