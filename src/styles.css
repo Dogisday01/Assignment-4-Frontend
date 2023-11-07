@@ -30,9 +30,13 @@ h1 {
 }
 
 body {
-	background-image: url("assets/background.png");
+	background: url("assets/background.png") no-repeat center center fixed;
 	background-size: cover;
-	background-repeat: no-repeat;
+}
+
+.index {
+	background: linear-gradient(to top right, #fff, #f8f7ff, #b8b8ff, #9381ff) no-repeat center center fixed;
+	background-size: cover;
 }
 
 .nav-bar {
@@ -70,12 +74,12 @@ body {
 	outline: none;
 }
 
-#banner {
+/* #banner {
 	background-image: linear-gradient(to top right, #fff, #f8f7ff, #b8b8ff, #9381ff);
 	opacity: 100%;
 	padding-top: 3%;
 	text-align: center;
-}
+} */
 
 .img-fluid {
 	margin-bottom: 500px;
