@@ -67,4 +67,20 @@ body {
 
 .navbar-toggler {
 	border: 0 solid transparent !important;
+	outline: none;
+}
+
+#banner {
+	background-image: linear-gradient(to top right, #fff, #f8f7ff, #b8b8ff, #9381ff);
+	opacity: 100%;
+	padding-top: 3%;
+	text-align: center;
+}
+
+.img-fluid {
+	margin-bottom: 500px;
+}
+
+.bottom-img {
+	width: 100%;
 }
