@@ -74,12 +74,11 @@ body {
 	outline: none;
 }
 
-/* #banner {
-	background-image: linear-gradient(to top right, #fff, #f8f7ff, #b8b8ff, #9381ff);
+#banner {
 	opacity: 100%;
 	padding-top: 3%;
 	text-align: center;
-} */
+}
 
 .img-fluid {
 	margin-bottom: 500px;
@@ -105,4 +104,16 @@ body {
 
 .carousel:hover .carousel-control-next-icon {
 	opacity: 1; /* Change the opacity to 1 to make it visible on hover */
+}
+
+.navbar-brand.description {
+	font-size: 48px; /* Устанавливаем желаемый размер шрифта */
+}
+
+.navbar-brand.description i {
+	font-size: 72px; /* Устанавливаем желаемый размер значка */
+}
+
+.purpl {
+	color: #9381ff;
 }
