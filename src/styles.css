@@ -90,7 +90,7 @@ body {
 
 #carouselContainer {
 	display: flex;
-	width: 400px;
+	width: 600px;
 	height: auto;
 	margin: 15px auto;
 	overflow: hidden;
