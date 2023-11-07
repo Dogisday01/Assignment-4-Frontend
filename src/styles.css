@@ -31,8 +31,8 @@ h1 {
 
 body {
 	background-image: url("assets/background.png");
-	background-size: cover;
-	background-repeat: no-repeat;
+	background-size: contain;
+	background-repeat: repeat;
 }
 
 .nav-bar {
@@ -67,4 +67,22 @@ body {
 
 .navbar-toggler {
 	border: 0 solid transparent !important;
+}
+
+#carouselContainer {
+	display: flex;
+	width: 400px;
+	height: auto;
+	margin: 15px auto;
+	overflow: hidden;
+	border-radius: 15px 15px 15px 15px;
+}
+
+.carousel-control-next-icon {
+	opacity: 0;
+	transition: opacity 0.3s;
+}
+
+.carousel:hover .carousel-control-next-icon {
+	opacity: 1; /* Change the opacity to 1 to make it visible on hover */
 }
