@@ -88,23 +88,32 @@ body {
 	width: 100%;
 }
 
+/*⬇ carousel properties ⬇*/
 #carouselContainer {
-	display: flex;
-	width: 600px;
+	width: 900px;
 	height: auto;
 	margin: 15px auto;
-	overflow: hidden;
+	overflow: hidden; /*hides the carousel's overflown corners behind the bounds*/
 	border-radius: 15px 15px 15px 15px;
 }
 
-.carousel-control-next-icon {
+/*hides carousel's prev & next button icons by default*/
+.carousel-control-next-icon, .carousel-control-prev-icon, .carousel-indicators{
 	opacity: 0;
-	transition: opacity 0.3s;
+	transition: opacity .4s;
 }
 
-.carousel:hover .carousel-control-next-icon {
+/* Shows carousel's prev, next icons and indicators semi-opaque */
+.carousel:hover .carousel-control-next-icon,
+.carousel:hover .carousel-control-prev-icon,
+.carousel:hover .carousel-indicators{
+	opacity: .7;
+}
+
+.carousel:hover .carousel-control-next-icon:hover, .carousel:hover .carousel-control-prev-icon:hover {
 	opacity: 1; /* Change the opacity to 1 to make it visible on hover */
 }
+/*⬆ carousel properties ⬆*/
 
 .navbar-brand.description {
 	font-size: 48px; /* Устанавливаем желаемый размер шрифта */
@@ -114,6 +123,6 @@ body {
 	font-size: 72px; /* Устанавливаем желаемый размер значка */
 }
 
-.purpl {
+.purple {
 	color: #9381ff;
 }
