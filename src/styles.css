@@ -143,7 +143,7 @@ body {
 	aspect-ratio    : 6/2;
 	padding         : 0.1vw 0.1vw 0.1vw 1vw;
 	background      : rgba(204, 201, 255, 0.5) !important;
-	backdrop-filter: blur(.5vw);
+	backdrop-filter : blur(.5vw);
 	flex-wrap       : wrap;
 	align-content   : flex-start;
 }
@@ -165,14 +165,14 @@ body {
 }
 
 .characteristic {
-	display         : flex;
-	flex-direction: column;
+	display        : flex;
+	flex-direction : column;
 }
 
 .characteristic ul li {
-	display: flex;
-	justify-content: space-between;
-	align-content: center;
+	display         : flex;
+	justify-content : space-between;
+	align-content   : center;
 }
 
 .characteristic ul {
@@ -188,14 +188,14 @@ body {
 }
 
 .btn {
-	display: flex!important;
-	align-content: center!important;
-	justify-content: center!important;
-	flex-direction: row;
-	width: 3vw!important;
-	height: 2vw!important;
+	display         : flex !important;
+	align-content   : center !important;
+	justify-content : center !important;
+	flex-direction  : row;
+	width           : 3vw !important;
+	height          : 2vw !important;
 	
-	font-family: "Open Sans", "Roboto", sans-serif!important;
+	font-family     : "Open Sans", "Roboto", sans-serif !important;
 }
 
 .carousel-inner .carousel-item {
