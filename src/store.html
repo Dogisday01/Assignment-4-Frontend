@@ -11,7 +11,7 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"/>
 	<script src="index.js"></script>
 </head>
-<body class="index">
+<body>
 <header class="header">
 	<!-- navbar -->
 	<nav class="navbar navbar-expand-lg bg-body-tertiary"
@@ -28,7 +28,7 @@
 						<a class="nav-link" href="index.html">HOME</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" href="store.html">PRODUCTS</a>
+						<a class="nav-link" href="#">PRODUCTS</a>
 					</li>
 					<li class="nav-item">
 						<a class="nav-link" href="#">ABOUT US</a>
@@ -40,41 +40,75 @@
 	<!-- navbar -->
 </header>
 <main>
-	<div id="carouselContainer">
-			<div id="carouselExampleIndicators" class="carousel slide">
-				<div class="carousel-indicators">
-					<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
-							aria-current="true" aria-label="Slide 1"></button>
-					<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
-							aria-label="Slide 2"></button>
-					<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
-							aria-label="Slide 3"></button>
+	<div id="carouselBlock">
+		
+		<div id="bannerCarousel" class="carousel slide">
+			<div class="carousel-indicators">
+				<button type="button" data-bs-target="#bannerCarousel" data-bs-slide-to="0" class="active"
+				        aria-current="true" aria-label="Slide 1"></button>
+				<button type="button" data-bs-target="#bannerCarousel" data-bs-slide-to="1"
+				        aria-label="Slide 2"></button>
+				<button type="button" data-bs-target="#bannerCarousel" data-bs-slide-to="2"
+				        aria-label="Slide 3"></button>
+			</div>
+			<div class="carousel-inner">
+				<div class="carousel-item active">
+					<img src="assets/banner-carousel/XBox.png" class="d-block w-100" alt="XBox">
 				</div>
-				<div class="carousel-inner">
-					<div class="carousel-item active">
-						<img src="assets/banner-carousel/XBox.png" class="d-block w-100" alt="XBox">
-					</div>
-					<div class="carousel-item">
-						<img src="assets/banner-carousel/Leica.png" class="d-block w-100" alt="Leica">
-					</div>
-					<div class="carousel-item">
-						<img src="assets/banner-carousel/Bang&Olufsen.png" class="d-block w-100" alt="Bang&Olufsen">
-					</div>
+				<div class="carousel-item">
+					<img src="assets/banner-carousel/Leica.png" class="d-block w-100" alt="Leica">
 				</div>
-				<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
-						data-bs-slide="prev">
-					<span class="carousel-control-prev-icon" aria-hidden="true"></span>
-					<span class="visually-hidden">Previous</span>
-				</button>
-				<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
-						data-bs-slide="next">
-					<span class="carousel-control-next-icon" aria-hidden="true"></span>
-					<span class="visually-hidden">Next</span>
-				</button>
+				<div class="carousel-item">
+					<img src="assets/banner-carousel/Bang&Olufsen.png" class="d-block w-100" alt="Bang&Olufsen">
+				</div>
+			</div>
+			<button class="carousel-control-prev" type="button" data-bs-target="#bannerCarousel"
+			        data-bs-slide="prev">
+				<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+				<span class="visually-hidden">Previous</span>
+			</button>
+			<button class="carousel-control-next" type="button" data-bs-target="#bannerCarousel"
+			        data-bs-slide="next">
+				<span class="carousel-control-next-icon" aria-hidden="true"></span>
+				<span class="visually-hidden">Next</span>
+			</button>
+		</div>
+		
+		<div id="cardColumn">
+			<div class="card">
+				<img src="assets/Console.jpg" class="card-img-top" alt="Console">
+				<div class="card-body">
+					<h5 class="card-title">Card title</h5>
+					<p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+						card's content.</p>
+					<a href="#" class="btn btn-primary">Go somewhere</a>
+				</div>
+			</div>
+			<div class="card">
+				<img src="assets/Camera.jpg" class="card-img-top" alt="Camera">
+				<div class="card-body">
+					<h5 class="card-title">Card title</h5>
+					<p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+						card's content.</p>
+					<a href="#" class="btn btn-primary">Go somewhere</a>
+				</div>
+			</div>
+			<div class="card">
+				<img src="assets/Headphone.jpg" class="card-img-top" alt="Headphone">
+				<div class="card-body">
+					<h5 class="card-title">Card title</h5>
+					<p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+						card's content.</p>
+					<a href="#" class="btn btn-primary">Go somewhere</a>
+				</div>
 			</div>
 		</div>
+	</div>
+
 </main>
 
+
+<!-- Popper and bootstrap css connection -->
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
         integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
         crossorigin="anonymous"></script>
