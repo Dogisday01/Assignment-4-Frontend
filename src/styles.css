@@ -200,7 +200,7 @@ body {
 .product-name {
 	font-family : "Open Sans", "Roboto", sans-serif;
 	font-style  : normal;
-	font-size   : 2.2vh;
+	font-size   : 1.1vw;
 	margin      : 0 0 .5vw 0;
 }
 
@@ -218,7 +218,7 @@ body {
 .characteristic ul {
 	list-style  : none;
 	font-family : "IBM Plex Sans", sans-serif;
-	font-size   : 1.5vh;
+	font-size   : .75vw;
 	padding     : 0;
 	margin      : 0 0 1vw 0;
 }
@@ -233,13 +233,22 @@ body {
 	flex-direction: column!important;
 	justify-content: space-between;
 	align-content: center!important;
+	padding: .75vw !important;
 }
 .vertical-card .card-text {
 	margin: 0 !important;
 	display: flex;
 	align-items: center;
 }
-
+.vertical-card .card-body .card-title {
+	font-family: "Open Sans", "Roboto", sans-serif !important;
+	font-size: 1.1vw !important;
+	margin: 0 0 .375vw 0 !important;
+}
+.card-body .card-text {
+	font-family: "IBM Plex Sans", sans-serif;
+	font-size: .75vw;
+}
 .btn {
 	display         : flex !important;
 	align-items: center;
@@ -247,6 +256,8 @@ body {
 	flex-direction  : row;
 	width           : 3vw !important;
 	height          : 2vw !important;
+	border: solid 0 !important;
+	border-radius : .75vw .75vw .75vw .75vw !important;
 	
 	font-family     : "Open Sans", "Roboto", sans-serif !important;
 	font-size       : 1vw !important;
