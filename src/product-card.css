@@ -1,0 +1,37 @@
+
+.card-container {
+	margin : 3vw 2vw 1vw 2vw;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	gap: calc(5px + 1vw);
+}
+.card {
+	width: calc((463.2px - 5px - 1vw)/2);
+	border: solid 0;
+	border-radius: 10px;
+	box-shadow: 5px 5px 5px 5px rgba(22, 41, 56, 0.18);
+}
+.card .innerCard img{
+	margin: 1vw 2vw 0 2vw;
+	width: calc(100% - 4vw);
+}
+.card-body {
+	padding: 10px;
+}
+
+.vertical-card .card-body .card-title {
+	font-family : "Open Sans", "Roboto", sans-serif !important;
+	font-size   : 20px !important;
+	margin-bottom : 5px;
+}
+
+.card-body .card-text {
+	font-family : "IBM Plex Sans", sans-serif;
+	font-size   : 6px;
+}
+
+.btn {
+
+}

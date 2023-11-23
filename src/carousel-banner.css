@@ -1,0 +1,42 @@
+/*⬇ carousel properties ⬇*/
+
+.carousel-outer {
+	margin        : 3vw 2vw;
+	border-radius : 2vw;
+	overflow      : hidden;
+	box-shadow : 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.carousel-button {
+	background-color : #F8F7FF;
+	height           : 35px;
+	width            : 35px;
+	margin           : auto calc(5px + 2vw);
+	border-radius    : 15px;
+	
+	opacity          : .35;
+	transition       : opacity .5s;
+}
+
+.carousel-button-icon {
+	width : 20px;
+}
+
+.carousel-control-prev-icon {
+	margin-left : -1.75px;
+}
+
+.carousel-control-next-icon {
+	margin-right : -1.75px;
+}
+
+.carousel:hover .carousel-button {
+	opacity : .7;
+}
+
+.carousel:hover .carousel-button:hover {
+	opacity : 1; /* Change the opacity to 1 to make it visible on hover */
+}
+
+
+/*⬆ carousel properties ⬆*/
