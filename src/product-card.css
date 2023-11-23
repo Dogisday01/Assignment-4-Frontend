@@ -5,33 +5,39 @@
 	flex-direction: row;
 	flex-wrap: wrap;
 	justify-content: center;
-	gap: calc(5px + 1vw);
+	gap: 2vw;
 }
 .card {
-	width: calc((463.2px - 5px - 1vw)/2);
+	width: 45vw;
+	height: 68vw;
 	border: solid 0;
 	border-radius: 10px;
 	box-shadow: 5px 5px 5px 5px rgba(22, 41, 56, 0.18);
-}
-.card .innerCard img{
-	margin: 1vw 2vw 0 2vw;
-	width: calc(100% - 4vw);
+	padding-top: 10px;
 }
 .card-body {
 	padding: 10px;
+	display         : flex!important;
+	flex-direction  : column!important;
+	justify-content : space-between!important;
 }
 
 .vertical-card .card-body .card-title {
 	font-family : "Open Sans", "Roboto", sans-serif !important;
-	font-size   : 20px !important;
-	margin-bottom : 5px;
+	font-size   : 15px !important;
+	margin-bottom : 10px;
+	padding: 0 10px;
 }
 
 .card-body .card-text {
 	font-family : "IBM Plex Sans", sans-serif;
-	font-size   : 6px;
+	font-size   : 12px;
+	margin: auto 0;
 }
-
-.btn {
-
+.price {
+	padding: 0 10px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-content: center;
 }
