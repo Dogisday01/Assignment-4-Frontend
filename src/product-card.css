@@ -13,11 +13,11 @@
 	border: solid 0;
 	border-radius: 10px;
 	box-shadow: 5px 5px 5px 5px rgba(22, 41, 56, 0.18);
-	padding-top: 10px;
+	padding-top: 2vw;
 }
 .card-body {
 	flex-grow: 1 !important;
-	padding: 10px;
+	padding: 2vw;
 	display        : flex !important;
 	flex-direction : column !important;
 	justify-content: space-between ;
@@ -26,8 +26,8 @@
 .vertical-card .card-body .card-title {
 	font-family : "Open Sans", "Roboto", sans-serif !important;
 	font-size   : 15px !important;
-	margin-bottom : 10px;
-	padding: 0 10px;
+	margin-bottom : 2vw;
+	padding: 0 2vw;
 }
 
 .card-body .card-text {
@@ -36,8 +36,7 @@
 	margin: auto 0;
 }
 .price {
-	margin-bot: 15px;
-	padding: 0 10px;
+	padding: 0 2vw;
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
