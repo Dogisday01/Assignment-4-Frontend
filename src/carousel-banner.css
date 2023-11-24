@@ -1,13 +1,19 @@
 /*⬇ carousel properties ⬇*/
 
+.banner-container {
+	margin : 15px 2vw;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+
 .carousel-outer {
-	margin        : 3vw 2vw;
-	border-radius : 2vw;
+	
+	border-radius : 10px;
 	overflow      : hidden;
 	box-shadow : 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
-
-.carousel-button {
+.carousel-button{
 	background-color : #F8F7FF;
 	height           : 35px;
 	width            : 35px;
@@ -37,6 +43,20 @@
 .carousel:hover .carousel-button:hover {
 	opacity : 1; /* Change the opacity to 1 to make it visible on hover */
 }
-
+.carousel:not(:hover) .carousel-button:not(:active) {
+	opacity: .35;
+}
+@media screen and (min-width: calc(756px + 6vw)) {
+	.carousel-outer {
+		height       : 504px;
+		aspect-ratio : 3/2;
+	}
+}
+@media screen and (min-width : 1340px) {
+	.carousel-outer {
+		height       : 504px;
+		aspect-ratio : 3/2;
+	}
+}
 
 /*⬆ carousel properties ⬆*/

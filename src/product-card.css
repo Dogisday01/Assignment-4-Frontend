@@ -1,50 +1,162 @@
 
 .card-container {
-	margin : 3vw 2vw 1vw 2vw;
-	display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
-	justify-content: center;
-	gap: 2vw;
+	margin          : 3vw 2vw 1vw 2vw;
+	display         : flex;
+	flex-direction  : row;
+	flex-wrap       : wrap;
+	justify-content : center;
+	gap             : 2vw;
 }
-.card {
-	width: 45vw;
-	height: 70vw;
-	border: solid 0;
-	border-radius: 10px;
-	box-shadow: 5px 5px 5px 5px rgba(22, 41, 56, 0.18);
-	padding-top: 2vw;
+
+.vertical-card {
+	width         : 45vw;
+	height        : 70vw;
+	border        : solid 0;
+	border-radius : 10px;
+	box-shadow    : 5px 5px 5px 5px rgba(22, 41, 56, 0.18);
+	padding-top   : 2vw;
 }
-.card-body {
-	flex-grow: 1 !important;
-	padding: 2vw;
-	display        : flex !important;
-	flex-direction : column !important;
-	justify-content: space-between ;
+
+.vertical-card .card-body {
+	flex-grow       : 1 !important;
+	padding         : 2vw;
+	display         : flex !important;
+	flex-direction  : column !important;
+	justify-content : space-between;
 }
 
 .vertical-card .card-body .card-title {
-	font-family : "Open Sans", "Roboto", sans-serif !important;
-	font-size   : 15px !important;
+	font-family   : "Open Sans", "Roboto", sans-serif !important;
+	font-size     : 15px !important;
 	margin-bottom : 2vw;
-	padding: 0 2vw;
+	padding       : 0 2vw;
 }
 
-.card-body .card-text {
+.vertical-card .card-body .card-text {
 	font-family : "IBM Plex Sans", sans-serif;
 	font-size   : 13px;
-	margin: auto 0;
+	margin      : auto 0;
 }
-.price {
-	padding: 0 2vw;
-	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
-	align-content: center;
+
+.vertical-card .price {
+	padding         : 0 2vw;
+	display         : flex;
+	flex-direction  : row;
+	justify-content : space-between;
+	align-content   : center;
 }
-.innerCard {
-	width: 100%;
-	height: 100%;
+
+.vertical-card .innerCard {
+	width          : 100%;
+	height         : 100%;
 	display        : flex !important;
 	flex-direction : column !important;
+}
+
+.btn {
+	color            : black;
+	background-color : #B8B8FF;
+	border-radius    : 15px;
+	border           : solid 0;
+}
+
+.btn:hover, .btn:active {
+	background-color : #9381FF !important;
+	color            : black !important;
+}
+
+@media not screen and (max-width : 500px) {
+	.card-container {
+		margin : 3vw 2vw 1vw 2vw;
+		gap    : 10px;
+	}
+	
+	.vertical-card{
+		width       : 225px;
+		height      : 350px;
+		padding-top : 10px;
+	}
+	
+	.vertical-card .card-body {
+		padding : 10px;
+	}
+	
+	.vertical-card .card-body .card-title {
+		margin-bottom : 10px;
+		padding       : 0 10px;
+	}
+	
+	.vertical-card .price {
+		padding : 0 10px;
+	}
+}
+
+.card-column {
+	display : none;
+}
+
+@media screen and (min-width: 1340px) {
+	.card-column {
+		display: flex;
+		flex-direction: column;
+		gap: 9px;
+	}
+	
+	.horizontal-card {
+		border        : solid 0;
+		border-radius : 10px;
+		box-shadow    : 5px 5px 5px 5px rgba(22, 41, 56, 0.18);
+		
+		margin          : 0 0.5vw !important;
+		display         : flex !important;
+		flex-direction  : row !important;
+		justify-content : center !important;
+	}
+	.inner-horizontal-card {
+		display: flex;
+		flex-direction: row;
+		width: 500px;
+	}
+	
+	.horizontal-card .card-body {
+		padding: 10px;
+		width   : 23vw;
+		display: flex;
+		flex-direction: column;
+	}
+	.horizontal-card .card-body .btn {
+		margin-left: auto;
+	}
+	
+	.horizontal-card img {
+		border-radius : .6vw .6vw .6vw .6vw;
+		width: 150px;
+		margin: auto;
+	}
+	
+	.product-name {
+		font-family   : "Open Sans", "Roboto", sans-serif !important;
+		font-size     : 15px !important;
+		margin-bottom : 10px;
+		padding       : 0 10px;
+	}
+	
+	.characteristic {
+		display        : flex;
+		flex-direction : column;
+	}
+	
+	.characteristic ul li {
+		display         : flex;
+		justify-content : space-between;
+		align-content   : center;
+	}
+	
+	.characteristic ul {
+		list-style  : none;
+		font-family : "IBM Plex Sans", sans-serif;
+		font-size   : 13px;
+		margin      : auto 0;
+		padding: 0 10px;
+	}
 }
