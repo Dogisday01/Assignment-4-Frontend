@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Product</title>
+
+    <link rel="icon" type="image/x-icon" href="assets/favicon.png">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"/>
+    <script src="index.js"></script>
+</head>
+<body>
+<style>
+    body {
+        background-color: #B8B8FF;
+        background-blend-mode: overlay;
+    }
+
+    main{
+        margin-left: 200px;
+        margin-right: 200px;
+        margin-top: 20px;
+    }
+
+    .bg {
+        padding: 15px 15px 5px 15px !important;
+        background: #fff;
+        border: 2px solid whitesmoke;
+        border-radius: 10px;
+    }
+
+    #cart {
+        margin-left: 200px;
+        margin-right: 200px;
+        margin-top: 20px;
+        text-align: center;
+        background: rgba(184,184,255,0.64);
+        border-radius: 10px;
+    }
+
+    a {
+        text-decoration: none !important;
+    }
+
+    #delivery {
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .tooltip-button {
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+        background: #fff;
+        padding: 11px 8px 11px 8px;
+        border-radius: 50%;
+    }
+
+    .buttonn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: auto;
+        padding-bottom: 10px;
+    }
+
+    .border-bot {
+        border-bottom: 2px #9381FF solid;
+    }
+
+    input[class = "selectAll"] {
+        height: 25px;
+        width: 25px;
+        vertical-align: middle;
+        margin-bottom: 10px;
+    }
+
+    .myDiv:not(.lastDiv) {
+        border-bottom: 1px solid #9381FF;
+    }
+    .myDiv:not(.firstDiv) {
+        padding-top: 10px;
+    }
+</style>
+<header class="header">
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary"
+         style="padding-bottom: 0; border-bottom-left-radius: 3px;border-bottom-right-radius: 3px; box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.3); transition: box-shadow 0.3s ease;">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"><img src="assets/TWIN-SHOP.png" alt=""></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"
+                    id="switcherbutton">
+                <span class="fa-solid" id="switcher">&#xf0c9;</span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav" style="margin-left: auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html">HOME</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="store.html">PRODUCTS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">ABOUT US</a>
+                    </li>
+                    <li class="px-0">
+                        <button class="btnLogin-popup px-0" id="openButton"> Log in</button>
+                    </li>
+                    <script>
+                        document.getElementById("openButton").addEventListener("click", function () {
+                            window.location.href = "logging.html";
+                        });
+                    </script>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- navbar -->
+</header>
+
+<main>
+    <div class="row">
+        <div class="col-8">
+            <div class="bg mt-3 p-3">
+                <div id="title">
+                    <h1 class="mb-3" style="font-weight: 600; text-align: start">title</h1>
+                </div>
+                <div style="position: relative; display:flex;">
+                    <div class="col-6" style="margin-right: 36px; position:relative; box-sizing: border-box;" id="img">
+                        <img src="assets/Tablet.jpg" style="width: 100%; height: auto;">
+                    </div>
+
+                    <div class="col-5">
+                        <h3 class="pb-5">Description</h3>
+                        <div id="id1s" style="display:flex;justify-content: space-between"><p>id1s</p><p>asdasda</p></div>
+                        <div id="id2s" style="display:flex;justify-content: space-between"><p>id2s</p><p>asdasda</p></div>
+                        <div id="id3s" style="display:flex;justify-content: space-between"><p>id3s</p><p>asdasda</p></div>
+                        <div id="id4s" style="display:flex;justify-content: space-between"><p>id4s</p><p>asdasda</p></div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg mt-3">
+                <h2 class="pb-5" style="text-align: center">Full description</h2>
+                <div id="id1" style="display:flex;justify-content: space-between"></div>
+                <div id="id2" style="display:flex;justify-content: space-between"><p>dasda</p><p>asdasda</p></div>
+                <div id="id3" style="display:flex;justify-content: space-between"><p>dasda</p><p>asdasda</p></div>
+                <div id="id4" style="display:flex;justify-content: space-between"><p>dasda</p><p>asdasda</p></div>
+                <div id="id5" style="display:flex;justify-content: space-between"><p>dasda</p><p>asdasda</p></div>
+                <div id="id6" style="display:flex;justify-content: space-between"><p>dasda</p><p>asdasda</p></div>
+                <div id="id7" style="display:flex;justify-content: space-between"><p>dasda</p><p>asdasda</p></div>
+                <div id="id8" style="display:flex;justify-content: space-between"><p>dasda</p><p>asdasda</p></div>
+            </div>
+        </div>
+        <div class="col-4 container-fluid">
+            <div class="bg mt-3" style="position: sticky; top: 20px; height: fit-content; flex: 1 0 400px">
+                <div class="myDiv firstDiv"><i class="fa-solid fa-coins"></i> Payment methods</div>
+                <div class="myDiv">  <i class="fa-solid fa-credit-card"></i> Payment upon receipt</div>
+                <div class="myDiv lastDiv" style="padding-bottom: 5px">  <i class="fa-solid fa-building-columns"></i> Payment by installments</div>
+
+            </div>
+        </div>
+    </div>
+</main>
+
+
+<!-- Popper and bootstrap css connection -->
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+        crossorigin="anonymous"></script>
+<script src="data.js"></script>
+<script>
+    const urlParams = new URLSearchParams(window.location.search);
+    const productType = urlParams.get('type');
+
+    const title = document.querySelector('#title');
+    const img = document.querySelector('#img');
+    const cost = document.querySelector('#cost');
+
+    const id1 = document.querySelector('#id1');
+    const id2 = document.querySelector('#id2');
+    const id3 = document.querySelector('#id3');
+    const id4 = document.querySelector('#id4');
+    const id5 = document.querySelector('#id5');
+    const id6 = document.querySelector('#id6');
+    const id7 = document.querySelector('#id7');
+    const id8 = document.querySelector('#id8');
+
+    const id1s = document.querySelector('#id1s');
+    const id2s = document.querySelector('#id2s');
+    const id3s = document.querySelector('#id3s');
+    const id4s = document.querySelector('#id4s');
+
+
+    switch (productType) {
+        case 'tablet':
+            id1s.innerHTML = `<p>Model</p><p>2023</p>`;
+            id2s.innerHTML = `<p>Diagonal, inch</p><p>11</p>`;
+            id3s.innerHTML = `<p>Resolution</p><p>1080x2640</p>`;
+            id4s.innerHTML = `<p>Matrix type</p><p>AMOLED</p>`;
+            img.innerHTML = `<img src="assets/Tablet.jpg" style="width: 100%; height: auto;">`;
+            title.innerHTML = `<h2 class="mb-3" style="font-weight: 600; text-align: start">Xiaomi Pad SE 11inch</h2>`;
+            id1.innerHTML = `<p>Communication</p> <p>Wi-Fi</p>`;
+            id2.innerHTML = `<p>Camera</p> <p>FullHD(1080)</p>`;
+            id3.innerHTML = `<p>Connector</p> <p>USB Type-C</p>`;
+            id4.innerHTML = `<p>RAM, ROM</p> <p>128 GB, 4GB</p>`;
+            id5.innerHTML = `<p>Processor</p> <p>Qualcomm Snapdragon 680</p>`;
+            id6.innerHTML = `<p>Resolution</p> <p>1080x2640</p>`;
+            id7.innerHTML = `<p>Material</p> <p>Metal</p>`;
+            id8.innerHTML = `<p>Diagonal, inch</p> <p>11</p>`;
+            break;
+        case 'TV':
+            id1s.innerHTML = `<p>Diagonal, cm</p><p>195cm</p>`;
+            id2s.innerHTML = `<p>Resolution</p><p>7680x4320</p>`;
+            id3s.innerHTML = `<p>Smart TV</p><p>yes</p>`;
+            id4s.innerHTML = `<p>Matrix</p><p>OLED</p>`;
+            img.innerHTML = `<img src="assets/TV.jpg" style="width: 100%; height: auto;">`;
+            title.innerHTML = `<h2 class="mb-3" style="font-weight: 600; text-align: start">TV LG 77"</h2>`;
+            id1.innerHTML = `<p>Volume power, watts</p> <p>80</p>`;
+            id2.innerHTML = `<p></p> <p></p>`;
+            id3.innerHTML = `<p></p> <p></p>`;
+            id4.innerHTML = `<p></p> <p></p>`;
+            id5.innerHTML = `<p></p> <p></p>`;
+            id6.innerHTML = `<p></p> <p></p>`;
+            id7.innerHTML = `<p></p> <p></p>`;
+            id8.innerHTML = `<p></p> <p></p>`;
+            break;
+        case '':
+            id1s.innerHTML = `<p></p><p></p>`;
+            id2s.innerHTML = `<p></p><p></p>`;
+            id3s.innerHTML = `<p></p><p></p>`;
+            id4s.innerHTML = `<p></p><p></p>`;
+            img.innerHTML = `<img src="" style="width: 100%; height: auto;">`;
+            title.innerHTML = `<h2 class="mb-3" style="font-weight: 600; text-align: start"></h2>`;
+            id1.innerHTML = `<p></p> <p></p>`;
+            id2.innerHTML = `<p></p> <p></p>`;
+            id3.innerHTML = `<p></p> <p></p>`;
+            id4.innerHTML = `<p></p> <p></p>`;
+            id5.innerHTML = `<p></p> <p></p>`;
+            id6.innerHTML = `<p></p> <p></p>`;
+            id7.innerHTML = `<p></p> <p></p>`;
+            id8.innerHTML = `<p></p> <p></p>`;
+            break;
+        case '':
+            id1s.innerHTML = `<p></p><p></p>`;
+            id2s.innerHTML = `<p></p><p></p>`;
+            id3s.innerHTML = `<p></p><p></p>`;
+            id4s.innerHTML = `<p></p><p></p>`;
+            img.innerHTML = `<img src="" style="width: 100%; height: auto;">`;
+            title.innerHTML = `<h2 class="mb-3" style="font-weight: 600; text-align: start"></h2>`;
+            id1.innerHTML = `<p></p> <p></p>`;
+            id2.innerHTML = `<p></p> <p></p>`;
+            id3.innerHTML = `<p></p> <p></p>`;
+            id4.innerHTML = `<p></p> <p></p>`;
+            id5.innerHTML = `<p></p> <p></p>`;
+            id6.innerHTML = `<p></p> <p></p>`;
+            id7.innerHTML = `<p></p> <p></p>`;
+            id8.innerHTML = `<p></p> <p></p>`;
+            break;
+        case '':
+            id1s.innerHTML = `<p></p><p></p>`;
+            id2s.innerHTML = `<p></p><p></p>`;
+            id3s.innerHTML = `<p></p><p></p>`;
+            id4s.innerHTML = `<p></p><p></p>`;
+            img.innerHTML = `<img src="" style="width: 100%; height: auto;">`;
+            title.innerHTML = `<h2 class="mb-3" style="font-weight: 600; text-align: start"></h2>`;
+            id1.innerHTML = `<p></p> <p></p>`;
+            id2.innerHTML = `<p></p> <p></p>`;
+            id3.innerHTML = `<p></p> <p></p>`;
+            id4.innerHTML = `<p></p> <p></p>`;
+            id5.innerHTML = `<p></p> <p></p>`;
+            id6.innerHTML = `<p></p> <p></p>`;
+            id7.innerHTML = `<p></p> <p></p>`;
+            id8.innerHTML = `<p></p> <p></p>`;
+            break;
+        case '':
+            id1s.innerHTML = `<p></p><p></p>`;
+            id2s.innerHTML = `<p></p><p></p>`;
+            id3s.innerHTML = `<p></p><p></p>`;
+            id4s.innerHTML = `<p></p><p></p>`;
+            img.innerHTML = `<img src="" style="width: 100%; height: auto;">`;
+            title.innerHTML = `<h2 class="mb-3" style="font-weight: 600; text-align: start"></h2>`;
+            id1.innerHTML = `<p></p> <p></p>`;
+            id2.innerHTML = `<p></p> <p></p>`;
+            id3.innerHTML = `<p></p> <p></p>`;
+            id4.innerHTML = `<p></p> <p></p>`;
+            id5.innerHTML = `<p></p> <p></p>`;
+            id6.innerHTML = `<p></p> <p></p>`;
+            id7.innerHTML = `<p></p> <p></p>`;
+            id8.innerHTML = `<p></p> <p></p>`;
+            break;
+        case '':
+            id1s.innerHTML = `<p></p><p></p>`;
+            id2s.innerHTML = `<p></p><p></p>`;
+            id3s.innerHTML = `<p></p><p></p>`;
+            id4s.innerHTML = `<p></p><p></p>`;
+            img.innerHTML = `<img src="" style="width: 100%; height: auto;">`;
+            title.innerHTML = `<h2 class="mb-3" style="font-weight: 600; text-align: start"></h2>`;
+            id1.innerHTML = `<p></p> <p></p>`;
+            id2.innerHTML = `<p></p> <p></p>`;
+            id3.innerHTML = `<p></p> <p></p>`;
+            id4.innerHTML = `<p></p> <p></p>`;
+            id5.innerHTML = `<p></p> <p></p>`;
+            id6.innerHTML = `<p></p> <p></p>`;
+            id7.innerHTML = `<p></p> <p></p>`;
+            id8.innerHTML = `<p></p> <p></p>`;
+            break;
+        case '':
+            id1s.innerHTML = `<p></p><p></p>`;
+            id2s.innerHTML = `<p></p><p></p>`;
+            id3s.innerHTML = `<p></p><p></p>`;
+            id4s.innerHTML = `<p></p><p></p>`;
+            img.innerHTML = `<img src="" style="width: 100%; height: auto;">`;
+            title.innerHTML = `<h2 class="mb-3" style="font-weight: 600; text-align: start"></h2>`;
+            id1.innerHTML = `<p></p> <p></p>`;
+            id2.innerHTML = `<p></p> <p></p>`;
+            id3.innerHTML = `<p></p> <p></p>`;
+            id4.innerHTML = `<p></p> <p></p>`;
+            id5.innerHTML = `<p></p> <p></p>`;
+            id6.innerHTML = `<p></p> <p></p>`;
+            id7.innerHTML = `<p></p> <p></p>`;
+            id8.innerHTML = `<p></p> <p></p>`;
+            break;
+        case '':
+            id1s.innerHTML = `<p></p><p></p>`;
+            id2s.innerHTML = `<p></p><p></p>`;
+            id3s.innerHTML = `<p></p><p></p>`;
+            id4s.innerHTML = `<p></p><p></p>`;
+            img.innerHTML = `<img src="" style="width: 100%; height: auto;">`;
+            title.innerHTML = `<h2 class="mb-3" style="font-weight: 600; text-align: start"></h2>`;
+            id1.innerHTML = `<p></p> <p></p>`;
+            id2.innerHTML = `<p></p> <p></p>`;
+            id3.innerHTML = `<p></p> <p></p>`;
+            id4.innerHTML = `<p></p> <p></p>`;
+            id5.innerHTML = `<p></p> <p></p>`;
+            id6.innerHTML = `<p></p> <p></p>`;
+            id7.innerHTML = `<p></p> <p></p>`;
+            id8.innerHTML = `<p></p> <p></p>`;
+            break;
+        case '':
+            id1s.innerHTML = `<p></p><p></p>`;
+            id2s.innerHTML = `<p></p><p></p>`;
+            id3s.innerHTML = `<p></p><p></p>`;
+            id4s.innerHTML = `<p></p><p></p>`;
+            img.innerHTML = `<img src="" style="width: 100%; height: auto;">`;
+            title.innerHTML = `<h2 class="mb-3" style="font-weight: 600; text-align: start"></h2>`;
+            id1.innerHTML = `<p></p> <p></p>`;
+            id2.innerHTML = `<p></p> <p></p>`;
+            id3.innerHTML = `<p></p> <p></p>`;
+            id4.innerHTML = `<p></p> <p></p>`;
+            id5.innerHTML = `<p></p> <p></p>`;
+            id6.innerHTML = `<p></p> <p></p>`;
+            id7.innerHTML = `<p></p> <p></p>`;
+            id8.innerHTML = `<p></p> <p></p>`;
+            break;
+        case '':
+            id1s.innerHTML = `<p></p><p></p>`;
+            id2s.innerHTML = `<p></p><p></p>`;
+            id3s.innerHTML = `<p></p><p></p>`;
+            id4s.innerHTML = `<p></p><p></p>`;
+            img.innerHTML = `<img src="" style="width: 100%; height: auto;">`;
+            title.innerHTML = `<h2 class="mb-3" style="font-weight: 600; text-align: start"></h2>`;
+            id1.innerHTML = `<p></p> <p></p>`;
+            id2.innerHTML = `<p></p> <p></p>`;
+            id3.innerHTML = `<p></p> <p></p>`;
+            id4.innerHTML = `<p></p> <p></p>`;
+            id5.innerHTML = `<p></p> <p></p>`;
+            id6.innerHTML = `<p></p> <p></p>`;
+            id7.innerHTML = `<p></p> <p></p>`;
+            id8.innerHTML = `<p></p> <p></p>`;
+            break;
+    }
+</script>
+</body>
+</html>
