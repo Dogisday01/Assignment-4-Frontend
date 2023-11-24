@@ -20,12 +20,6 @@ fetch("cart.json")
             </div>
         </div>
     </div>
-    <div style="display:flex; align-items: center">
-        <button type="button" class="delete" style="background: #FFFFFF; border: 2px #222529 solid; border-radius: 5px"
-            onclick="this.parentNode.parentNode.parentNode.style.display = 'none';">
-            <i class="fa-solid fa-trash" style="color: #222529;"></i>
-        </button>
-    </div>
 </div>
 
         `;

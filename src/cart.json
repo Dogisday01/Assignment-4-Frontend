@@ -1,8 +1,17 @@
 [
   {
     "Name": "Xiaomi Redmi Pad SE",
-    "Cost": "196.99$",
-    "img": "assets/Tablet.jpg",
-    "sum": 196.99
+    "Cost": "90,000₸",
+    "img": "assets/Tablet.jpg"
+  },
+  {
+    "Name": "LG 77inch OLED77Z29LA",
+    "Cost": "8,000,000₸",
+    "img": "assets/TV.jpg"
+  },
+  {
+    "Name": "Dreame L20 Ultra Complete",
+    "Cost": "700,000₸",
+    "img": "assets/Vacuum-cleaner.jpg"
   }
 ]

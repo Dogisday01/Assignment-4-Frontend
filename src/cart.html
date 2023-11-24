@@ -10,6 +10,7 @@
           integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"/>
     <script src="index.js"></script>
+    <link rel="stylesheet" href="product-card.css">
 </head>
 <body>
 <style>
@@ -168,9 +169,12 @@
             </div>
             <div class="bg mt-3">
                 <div class="border-bot">
-                <label id="selectAllLabel" >
-                    <input type="checkbox" id="selectAllCheckbox" class="selectAll"> Select all
-                </label>
+                    <div style="display:flex; align-items: center">
+                        <button type="button" class="delete" style="background: #FFFFFF; border: 2px #222529 solid; border-radius: 5px"
+                                onclick="this.parentNode.parentNode.parentNode.style.display = 'none';">
+                            <i class="fa-solid fa-trash" style="color: #222529;"></i>
+                        </button>
+                    </div>
                 </div>
                 <div class="mt-1" id="productCart">
 
@@ -182,7 +186,16 @@
             <div class="myDiv firstDiv"><i class="fa-solid fa-coins"></i> Payment methods</div>
             <div class="myDiv">  <i class="fa-solid fa-credit-card"></i> Payment upon receipt</div>
             <div class="myDiv lastDiv" style="padding-bottom: 5px">  <i class="fa-solid fa-building-columns"></i> Payment by installments</div>
-
+            <div style="display:grid;">
+                <a onclick="playSound('card.wav')" class="btn btn-primary mt-2" style="font-weight: 600">Pay by card</a>
+                <a onclick="playSound('cash.wav')" class="btn btn-primary mt-2" style="font-weight: 600">Pay in cash</a>
+            </div>
+            <script>
+                function playSound(soundFile) {
+                    let audio = new Audio(soundFile);
+                    audio.play();
+                }
+            </script>
         </div>
     </div>
     </div>

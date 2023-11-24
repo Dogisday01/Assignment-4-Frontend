@@ -9,6 +9,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
           integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"/>
+    <link rel="stylesheet" href="product-card.css">
     <script src="index.js"></script>
 </head>
 <body>
@@ -122,7 +123,7 @@
     <!-- navbar -->
 </header>
 
-<main>
+<main class="mb-5">
     <div class="row">
         <div class="col-8">
             <div class="bg mt-3 p-3">
@@ -159,10 +160,13 @@
         </div>
         <div class="col-4 container-fluid">
             <div class="bg mt-3" style="position: sticky; top: 20px; height: fit-content; flex: 1 0 400px">
-                <div class="myDiv firstDiv"><i class="fa-solid fa-coins"></i> Payment methods</div>
-                <div class="myDiv">  <i class="fa-solid fa-credit-card"></i> Payment upon receipt</div>
-                <div class="myDiv lastDiv" style="padding-bottom: 5px">  <i class="fa-solid fa-building-columns"></i> Payment by installments</div>
-
+                <div>
+                    <h2 id="cost"></h2>
+                </div>
+                <div style="display: grid">
+                    <a href="cart.html" class="btn btn-primary mt-2" style="font-weight: 600">Go to Cart</a>
+                    <a href="" id="addToCartBtn" class="btn btn-primary mt-2" style="font-weight: 600">Add to Cart</a>
+                </div>
             </div>
         </div>
     </div>
@@ -201,183 +205,229 @@
 
 
     switch (productType) {
-        case 'tablet':
-            id1s.innerHTML = `<p>Model</p><p>2023</p>`;
-            id2s.innerHTML = `<p>Diagonal, inch</p><p>11</p>`;
-            id3s.innerHTML = `<p>Resolution</p><p>1080x2640</p>`;
-            id4s.innerHTML = `<p>Matrix type</p><p>AMOLED</p>`;
+        case 'Tablet':
+            id1s.innerHTML = `<p>Display Size</p><p>10.1 inches</p>`;
+            id2s.innerHTML = `<p>Display Type</p><p>IPS LCD Capacitive Touchscreen</p>`;
+            id3s.innerHTML = `<p>Resolution</p><p>1920 x 1200 pixels</p>`;
+            id4s.innerHTML = `<p>Processor</p><p>Octa-core, 2.0 GHz</p>`;
+            id1.innerHTML = `<p>RAM</p> <p>4GB</p>`;
+            id2.innerHTML = `<p>Internal Storage</p> <p>64GB or 128GB</p>`;
+            id3.innerHTML = `<p>Expandable Storage</p> <p>MicroSD card slot (up to 256GB)</p>`;
+            id4.innerHTML = `<p>Operating System</p> <p>Android 11</p>`;
+            id5.innerHTML = `<p>Camera</p> <p>Rear: 8 MP, Front: 5 MP</p>`;
+            id6.innerHTML = `<p>Battery Capacity</p> <p>6000 mAh</p>`;
+            id7.innerHTML = `<p>Connectivity</p> <p>Wi-Fi, Bluetooth 5.0, USB-C</p>`;
+            id8.innerHTML = `<p>Weight, grams</p> <p>500</p>`;
             img.innerHTML = `<img src="assets/Tablet.jpg" style="width: 100%; height: auto;">`;
             title.innerHTML = `<h2 class="mb-3" style="font-weight: 600; text-align: start">Xiaomi Pad SE 11inch</h2>`;
-            id1.innerHTML = `<p>Communication</p> <p>Wi-Fi</p>`;
-            id2.innerHTML = `<p>Camera</p> <p>FullHD(1080)</p>`;
-            id3.innerHTML = `<p>Connector</p> <p>USB Type-C</p>`;
-            id4.innerHTML = `<p>RAM, ROM</p> <p>128 GB, 4GB</p>`;
-            id5.innerHTML = `<p>Processor</p> <p>Qualcomm Snapdragon 680</p>`;
-            id6.innerHTML = `<p>Resolution</p> <p>1080x2640</p>`;
-            id7.innerHTML = `<p>Material</p> <p>Metal</p>`;
-            id8.innerHTML = `<p>Diagonal, inch</p> <p>11</p>`;
+            cost.innerHTML = `<b>90,000₸</b>`;
             break;
         case 'TV':
-            id1s.innerHTML = `<p>Diagonal, cm</p><p>195cm</p>`;
-            id2s.innerHTML = `<p>Resolution</p><p>7680x4320</p>`;
-            id3s.innerHTML = `<p>Smart TV</p><p>yes</p>`;
-            id4s.innerHTML = `<p>Matrix</p><p>OLED</p>`;
+            id1s.innerHTML = `<p>Screen Size</p><p>55 inches</p>`;
+            id2s.innerHTML = `<p>Resolution</p><p>4K Ultra HD (3840 x 2160)</p>`;
+            id3s.innerHTML = `<p>Smart TV</p><p>Yes</p>`;
+            id4s.innerHTML = `<p>Display Technology</p><p>LED</p>`;
+            id1.innerHTML = `<p>Audio Output</p> <p>20W, Dolby Digital Plus</p>`;
+            id2.innerHTML = `<p>Refresh Rate</p> <p>60Hz</p>`;
+            id3.innerHTML = `<p>Operating System</p> <p>Android TV</p>`;
+            id4.innerHTML = `<p>Wireless Connectivity</p> <p>Wi-Fi, Bluetooth</p>`;
+            id5.innerHTML = `<p>Ports</p> <p>HDMI x3, USB x2</p>`;
+            id6.innerHTML = `<p>HDR Support</p> <p>Yes, HDR10</p>`;
+            id7.innerHTML = `<p>Aspect Ratio</p> <p>16:9</p>`;
+            id8.innerHTML = `<p>Weight, kg</p> <p>25</p>`;
             img.innerHTML = `<img src="assets/TV.jpg" style="width: 100%; height: auto;">`;
-            title.innerHTML = `<h2 class="mb-3" style="font-weight: 600; text-align: start">TV LG 77"</h2>`;
-            id1.innerHTML = `<p>Volume power, watts</p> <p>80</p>`;
-            id2.innerHTML = `<p></p> <p></p>`;
-            id3.innerHTML = `<p></p> <p></p>`;
-            id4.innerHTML = `<p></p> <p></p>`;
-            id5.innerHTML = `<p></p> <p></p>`;
-            id6.innerHTML = `<p></p> <p></p>`;
-            id7.innerHTML = `<p></p> <p></p>`;
-            id8.innerHTML = `<p></p> <p></p>`;
+            title.innerHTML = `<h2 class="mb-3" style="font-weight: 600; text-align: start">LG TV 77"</h2>`;
+            cost.innerHTML = `<b>8,000,000₸</b>`;
             break;
-        case '':
-            id1s.innerHTML = `<p></p><p></p>`;
-            id2s.innerHTML = `<p></p><p></p>`;
-            id3s.innerHTML = `<p></p><p></p>`;
-            id4s.innerHTML = `<p></p><p></p>`;
-            img.innerHTML = `<img src="" style="width: 100%; height: auto;">`;
-            title.innerHTML = `<h2 class="mb-3" style="font-weight: 600; text-align: start"></h2>`;
-            id1.innerHTML = `<p></p> <p></p>`;
-            id2.innerHTML = `<p></p> <p></p>`;
-            id3.innerHTML = `<p></p> <p></p>`;
-            id4.innerHTML = `<p></p> <p></p>`;
-            id5.innerHTML = `<p></p> <p></p>`;
-            id6.innerHTML = `<p></p> <p></p>`;
-            id7.innerHTML = `<p></p> <p></p>`;
-            id8.innerHTML = `<p></p> <p></p>`;
+
+        case 'VacuumCleaner':
+            id1s.innerHTML = `<p>Power, watts</p><p>1200W</p>`;
+            id2s.innerHTML = `<p>Suction Power</p><p>200 AW</p>`;
+            id3s.innerHTML = `<p>Bag Type</p><p>Bagless</p>`;
+            id4s.innerHTML = `<p>Filtration System</p><p>HEPA Filtration</p>`;
+            id1.innerHTML = `<p>Dust Capacity, liters</p> <p>2.5L</p>`;
+            id2.innerHTML = `<p>Noise Level, dB</p> <p>65dB</p>`;
+            id3.innerHTML = `<p>Cord Length, meters</p> <p>8</p>`;
+            id4.innerHTML = `<p>Attachments</p> <p>Crevice Tool, Upholstery Brush, Dusting Brush</p>`;
+            id5.innerHTML = `<p>Weight, kg</p> <p>6</p>`;
+            id6.innerHTML = `<p>Power Source</p> <p>Electric</p>`;
+            id7.innerHTML = `<p>Usage</p> <p>For Carpets, Hard Floors, Upholstery</p>`;
+            id8.innerHTML = `<p>Dimensions, cm</p> <p>30 x 25 x 40</p>`;
+            img.innerHTML = `<img src="assets/Vacuum-cleaner.jpg" style="width: 100%; height: auto;">`;
+            title.innerHTML = `<h2 class="mb-3" style="font-weight: 600; text-align: start">Dreame L20 Ultra Complete</h2>`;
+            cost.innerHTML = `<b>700,000₸</b>`;
             break;
-        case '':
-            id1s.innerHTML = `<p></p><p></p>`;
-            id2s.innerHTML = `<p></p><p></p>`;
-            id3s.innerHTML = `<p></p><p></p>`;
-            id4s.innerHTML = `<p></p><p></p>`;
-            img.innerHTML = `<img src="" style="width: 100%; height: auto;">`;
-            title.innerHTML = `<h2 class="mb-3" style="font-weight: 600; text-align: start"></h2>`;
-            id1.innerHTML = `<p></p> <p></p>`;
-            id2.innerHTML = `<p></p> <p></p>`;
-            id3.innerHTML = `<p></p> <p></p>`;
-            id4.innerHTML = `<p></p> <p></p>`;
-            id5.innerHTML = `<p></p> <p></p>`;
-            id6.innerHTML = `<p></p> <p></p>`;
-            id7.innerHTML = `<p></p> <p></p>`;
-            id8.innerHTML = `<p></p> <p></p>`;
+        case 'Camera':
+            id1s.innerHTML = `<p>Resolution</p><p>24 Megapixels</p>`;
+            id2s.innerHTML = `<p>Sensor Type</p><p>CMOS</p>`;
+            id3s.innerHTML = `<p>ISO Range</p><p>100-25600</p>`;
+            id4s.innerHTML = `<p>Focus Type</p><p>Autofocus</p>`;
+            id1.innerHTML = `<p>Image Stabilization</p> <p>Yes</p>`;
+            id2.innerHTML = `<p>Video Resolution</p> <p>4K at 30fps</p>`;
+            id3.innerHTML = `<p>Viewfinder Type</p> <p>Electronic</p>`;
+            id4.innerHTML = `<p>Shutter Speed Range</p> <p>1/4000 to 30 seconds</p>`;
+            id5.innerHTML = `<p>Burst Shooting</p> <p>Up to 10 fps</p>`;
+            id6.innerHTML = `<p>Storage Type</p> <p>SD Card</p>`;
+            id7.innerHTML = `<p>Wireless Connectivity</p> <p>Wi-Fi, Bluetooth</p>`;
+            id8.innerHTML = `<p>Weight, grams</p> <p>500</p>`;
+            img.innerHTML = `<img src="assets/Tablet.jpg" style="width: 100%; height: auto;">`;
+            title.innerHTML = `<h2 class="mb-3" style="font-weight: 600; text-align: start">Xiaomi Pad SE 11inch</h2>`;
+            cost.innerHTML = `<b>90,000₸</b>`;
             break;
-        case '':
-            id1s.innerHTML = `<p></p><p></p>`;
-            id2s.innerHTML = `<p></p><p></p>`;
-            id3s.innerHTML = `<p></p><p></p>`;
-            id4s.innerHTML = `<p></p><p></p>`;
-            img.innerHTML = `<img src="" style="width: 100%; height: auto;">`;
-            title.innerHTML = `<h2 class="mb-3" style="font-weight: 600; text-align: start"></h2>`;
-            id1.innerHTML = `<p></p> <p></p>`;
-            id2.innerHTML = `<p></p> <p></p>`;
-            id3.innerHTML = `<p></p> <p></p>`;
-            id4.innerHTML = `<p></p> <p></p>`;
-            id5.innerHTML = `<p></p> <p></p>`;
-            id6.innerHTML = `<p></p> <p></p>`;
-            id7.innerHTML = `<p></p> <p></p>`;
-            id8.innerHTML = `<p></p> <p></p>`;
+        case 'ElectricShaver':
+            id1s.innerHTML = `<p>Blade Type</p><p>Rotary</p>`;
+            id2s.innerHTML = `<p>Number of Blades</p><p>3</p>`;
+            id3s.innerHTML = `<p>Shaving Elements</p><p>Flex Heads</p>`;
+            id4s.innerHTML = `<p>Shaving Technology</p><p>Wet and Dry</p>`;
+            id1.innerHTML = `<p>Power Source</p> <p>Rechargeable Battery</p>`;
+            id2.innerHTML = `<p>Battery Life</p> <p>60 minutes of shaving time</p>`;
+            id3.innerHTML = `<p>Charging Time</p> <p>1 hour</p>`;
+            id4.innerHTML = `<p>Display</p> <p>LED indicator for battery status</p>`;
+            id5.innerHTML = `<p>Waterproof</p> <p>Yes, IPX7 rating</p>`;
+            id6.innerHTML = `<p>Trimming Lengths</p> <p>Adjustable settings</p>`;
+            id7.innerHTML = `<p>Cleaning</p> <p>Washable under running water</p>`;
+            id8.innerHTML = `<p>Weight, grams</p> <p>200</p>`;
+            img.innerHTML = `<img src="assets/Electric-shaver.jpg" style="width: 100%; height: auto;">`;
+            title.innerHTML = `<h2 class="mb-3" style="font-weight: 600; text-align: start">Philips S9982/55</h2>`;
+            cost.innerHTML = `<b>100,000₸</b>`;
             break;
-        case '':
-            id1s.innerHTML = `<p></p><p></p>`;
-            id2s.innerHTML = `<p></p><p></p>`;
-            id3s.innerHTML = `<p></p><p></p>`;
-            id4s.innerHTML = `<p></p><p></p>`;
-            img.innerHTML = `<img src="" style="width: 100%; height: auto;">`;
-            title.innerHTML = `<h2 class="mb-3" style="font-weight: 600; text-align: start"></h2>`;
-            id1.innerHTML = `<p></p> <p></p>`;
-            id2.innerHTML = `<p></p> <p></p>`;
-            id3.innerHTML = `<p></p> <p></p>`;
-            id4.innerHTML = `<p></p> <p></p>`;
-            id5.innerHTML = `<p></p> <p></p>`;
-            id6.innerHTML = `<p></p> <p></p>`;
-            id7.innerHTML = `<p></p> <p></p>`;
-            id8.innerHTML = `<p></p> <p></p>`;
+        case 'HairDryer':
+            id1s.innerHTML = `<p>Power</p><p>1800 Watts</p>`;
+            id2s.innerHTML = `<p>Heat Settings</p><p>Low, Medium, High</p>`;
+            id3s.innerHTML = `<p>Speed Settings</p><p>2 Speeds</p>`;
+            id4s.innerHTML = `<p>Cool Shot Button</p><p>Yes</p>`;
+            id1.innerHTML = `<p>Ionic Technology</p> <p>Yes</p>`;
+            id2.innerHTML = `<p>Ceramic Technology</p> <p>Yes</p>`;
+            id3.innerHTML = `<p>Attachments</p> <p>Concentrator Nozzle, Diffuser</p>`;
+            id4.innerHTML = `<p>Foldable Handle</p> <p>Yes</p>`;
+            id5.innerHTML = `<p>Overheat Protection</p> <p>Yes</p>`;
+            id6.innerHTML = `<p>Cord Length</p> <p>2 meters</p>`;
+            id7.innerHTML = `<p>Weight, grams</p> <p>500</p>`;
+            id8.innerHTML = `<p>Dimensions, cm</p> <p>20 x 15 x 8</p>`;
+            img.innerHTML = `<img src="assets/Tablet.jpg" style="width: 100%; height: auto;">`;
+            title.innerHTML = `<h2 class="mb-3" style="font-weight: 600; text-align: start">Xiaomi Pad SE 11inch</h2>`;
+            cost.innerHTML = `<b>90,000₸</b>`;
             break;
-        case '':
-            id1s.innerHTML = `<p></p><p></p>`;
-            id2s.innerHTML = `<p></p><p></p>`;
-            id3s.innerHTML = `<p></p><p></p>`;
-            id4s.innerHTML = `<p></p><p></p>`;
-            img.innerHTML = `<img src="" style="width: 100%; height: auto;">`;
-            title.innerHTML = `<h2 class="mb-3" style="font-weight: 600; text-align: start"></h2>`;
-            id1.innerHTML = `<p></p> <p></p>`;
-            id2.innerHTML = `<p></p> <p></p>`;
-            id3.innerHTML = `<p></p> <p></p>`;
-            id4.innerHTML = `<p></p> <p></p>`;
-            id5.innerHTML = `<p></p> <p></p>`;
-            id6.innerHTML = `<p></p> <p></p>`;
-            id7.innerHTML = `<p></p> <p></p>`;
-            id8.innerHTML = `<p></p> <p></p>`;
+        case 'FitnessBracelet':
+            id1s.innerHTML = `<p>Display Type</p><p>OLED Touchscreen</p>`;
+            id2s.innerHTML = `<p>Heart Rate Monitor</p><p>Yes</p>`;
+            id3s.innerHTML = `<p>Activity Tracking</p><p>Steps, Distance, Calories</p>`;
+            id4s.innerHTML = `<p>Sleep Monitoring</p><p>Yes</p>`;
+            id1.innerHTML = `<p>Water Resistance</p> <p>IP67</p>`;
+            id2.innerHTML = `<p>Connectivity</p> <p>Bluetooth 5.0</p>`;
+            id3.innerHTML = `<p>Battery Life</p> <p>Up to 7 days</p>`;
+            id4.innerHTML = `<p>Charging Method</p> <p>USB Charging</p>`;
+            id5.innerHTML = `<p>Smart Notifications</p> <p>Call, Message, App Alerts</p>`;
+            id6.innerHTML = `<p>GPS</p> <p>Connected GPS</p>`;
+            id7.innerHTML = `<p>Exercise Modes</p> <p>Multiple Sport Modes</p>`;
+            id8.innerHTML = `<p>Compatibility</p> <p>iOS, Android</p>`;
+            img.innerHTML = `<img src="assets/Fitness-watch.jpg" style="width: 100%; height: auto;">`;
+            title.innerHTML = `<h2 class="mb-3" style="font-weight: 600; text-align: start">Xiaomi Mi Band 8</h2>`;
+            cost.innerHTML = `<b>23,000₸</b>`;
             break;
-        case '':
-            id1s.innerHTML = `<p></p><p></p>`;
-            id2s.innerHTML = `<p></p><p></p>`;
-            id3s.innerHTML = `<p></p><p></p>`;
-            id4s.innerHTML = `<p></p><p></p>`;
-            img.innerHTML = `<img src="" style="width: 100%; height: auto;">`;
-            title.innerHTML = `<h2 class="mb-3" style="font-weight: 600; text-align: start"></h2>`;
-            id1.innerHTML = `<p></p> <p></p>`;
-            id2.innerHTML = `<p></p> <p></p>`;
-            id3.innerHTML = `<p></p> <p></p>`;
-            id4.innerHTML = `<p></p> <p></p>`;
-            id5.innerHTML = `<p></p> <p></p>`;
-            id6.innerHTML = `<p></p> <p></p>`;
-            id7.innerHTML = `<p></p> <p></p>`;
-            id8.innerHTML = `<p></p> <p></p>`;
+        case 'BluetoothHeadphones':
+            id1s.innerHTML = `<p>Driver Size</p><p>40mm</p>`;
+            id2s.innerHTML = `<p>Bluetooth Version</p><p>Bluetooth 5.0</p>`;
+            id3s.innerHTML = `<p>Wireless Range</p><p>Up to 10 meters</p>`;
+            id4s.innerHTML = `<p>Battery Life</p><p>Up to 20 hours playback</p>`;
+            id1.innerHTML = `<p>Frequency Response</p> <p>20Hz - 20kHz</p>`;
+            id2.innerHTML = `<p>Impedance</p> <p>32 Ohms</p>`;
+            id3.innerHTML = `<p>Microphone</p> <p>Built-in</p>`;
+            id4.innerHTML = `<p>Noise Cancellation</p> <p>Active Noise Cancellation (if available)</p>`;
+            id5.innerHTML = `<p>Controls</p> <p>On-ear touch controls</p>`;
+            id6.innerHTML = `<p>Charging Time</p> <p>2 hours</p>`;
+            id7.innerHTML = `<p>Foldable Design</p> <p>Yes</p>`;
+            id8.innerHTML = `<p>Weight, grams</p> <p>250</p>`;
+            img.innerHTML = `<img src="assets/Headphone.jpg" style="width: 100%; height: auto;">`;
+            title.innerHTML = `<h2 class="mb-3" style="font-weight: 600; text-align: start">Bang & Olufsen Bluetooth BeoPlay H95</h2>`;
+            cost.innerHTML = `<b>900,000₸</b>`;
             break;
-        case '':
-            id1s.innerHTML = `<p></p><p></p>`;
-            id2s.innerHTML = `<p></p><p></p>`;
-            id3s.innerHTML = `<p></p><p></p>`;
-            id4s.innerHTML = `<p></p><p></p>`;
-            img.innerHTML = `<img src="" style="width: 100%; height: auto;">`;
-            title.innerHTML = `<h2 class="mb-3" style="font-weight: 600; text-align: start"></h2>`;
-            id1.innerHTML = `<p></p> <p></p>`;
-            id2.innerHTML = `<p></p> <p></p>`;
-            id3.innerHTML = `<p></p> <p></p>`;
-            id4.innerHTML = `<p></p> <p></p>`;
-            id5.innerHTML = `<p></p> <p></p>`;
-            id6.innerHTML = `<p></p> <p></p>`;
-            id7.innerHTML = `<p></p> <p></p>`;
-            id8.innerHTML = `<p></p> <p></p>`;
+        case 'XboxConsole':
+            id1s.innerHTML = `<p>Processor</p><p>Custom AMD Octa-core CPU</p>`;
+            id2s.innerHTML = `<p>GPU</p><p>Custom AMD RDNA 2 GPU</p>`;
+            id3s.innerHTML = `<p>Memory</p><p>16 GB GDDR6</p>`;
+            id4s.innerHTML = `<p>Storage</p><p>1TB NVMe SSD</p>`;
+            id1.innerHTML = `<p>Resolution</p> <p>Up to 4K at 120Hz</p>`;
+            id2.innerHTML = `<p>Optical Drive</p> <p>4K UHD Blu-ray Drive</p>`;
+            id3.innerHTML = `<p>Wireless Connectivity</p> <p>Wi-Fi 5, Bluetooth 5.0</p>`;
+            id4.innerHTML = `<p>Ports</p> <p>USB-A, HDMI, Ethernet</p>`;
+            id5.innerHTML = `<p>Controller</p> <p>Xbox Wireless Controller</p>`;
+            id6.innerHTML = `<p>Backward Compatibility</p> <p>Yes, with select Xbox and Xbox 360 games</p>`;
+            id7.innerHTML = `<p>Online Services</p> <p>Xbox Live, Xbox Game Pass</p>`;
+            id8.innerHTML = `<p>Dimensions, cm</p> <p>30 x 24 x 6</p>`;
+            img.innerHTML = `<img src="assets/Console.jpg" style="width: 100%; height: auto;">`;
+            title.innerHTML = `<h2 class="mb-3" style="font-weight: 600; text-align: start">XBOX Series X</h2>`;
+            cost.innerHTML = `<b>900,000₸</b>`;
             break;
-        case '':
-            id1s.innerHTML = `<p></p><p></p>`;
-            id2s.innerHTML = `<p></p><p></p>`;
-            id3s.innerHTML = `<p></p><p></p>`;
-            id4s.innerHTML = `<p></p><p></p>`;
-            img.innerHTML = `<img src="" style="width: 100%; height: auto;">`;
-            title.innerHTML = `<h2 class="mb-3" style="font-weight: 600; text-align: start"></h2>`;
-            id1.innerHTML = `<p></p> <p></p>`;
-            id2.innerHTML = `<p></p> <p></p>`;
-            id3.innerHTML = `<p></p> <p></p>`;
-            id4.innerHTML = `<p></p> <p></p>`;
-            id5.innerHTML = `<p></p> <p></p>`;
-            id6.innerHTML = `<p></p> <p></p>`;
-            id7.innerHTML = `<p></p> <p></p>`;
-            id8.innerHTML = `<p></p> <p></p>`;
+        case 'WashingMachine':
+            id1s.innerHTML = `<p>Capacity</p><p>8 kg</p>`;
+            id2s.innerHTML = `<p>Washing Method</p><p>Front Load</p>`;
+            id3s.innerHTML = `<p>Spin Speed</p><p>1400 RPM</p>`;
+            id4s.innerHTML = `<p>Energy Efficiency Class</p><p>A+++</p>`;
+            id1.innerHTML = `<p>Wash Programs</p> <p>Cotton, Delicate, Quick Wash, Eco</p>`;
+            id2.innerHTML = `<p>Temperature Settings</p> <p>Hot, Warm, Cold</p>`;
+            id3.innerHTML = `<p>Water Consumption</p> <p>45 liters per wash</p>`;
+            id4.innerHTML = `<p>Noise Level</p> <p>50 dB (washing), 70 dB (spinning)</p>`;
+            id5.innerHTML = `<p>Drum Material</p> <p>Stainless Steel</p>`;
+            id6.innerHTML = `<p>Delay Start</p> <p>Up to 24 hours</p>`;
+            id7.innerHTML = `<p>Child Lock</p> <p>Yes</p>`;
+            id8.innerHTML = `<p>Dimensions, cm</p> <p>60 x 85 x 55</p>`;
+            img.innerHTML = `<img src="assets/Washing-machine.jpg" style="width: 100%; height: auto;">`;
+            title.innerHTML = `<h2 class="mb-3" style="font-weight: 600; text-align: start">LG Wash Tower Objet</h2>`;
+            cost.innerHTML = `<b>1,300,000₸</b>`;
             break;
-        case '':
-            id1s.innerHTML = `<p></p><p></p>`;
-            id2s.innerHTML = `<p></p><p></p>`;
-            id3s.innerHTML = `<p></p><p></p>`;
-            id4s.innerHTML = `<p></p><p></p>`;
-            img.innerHTML = `<img src="" style="width: 100%; height: auto;">`;
-            title.innerHTML = `<h2 class="mb-3" style="font-weight: 600; text-align: start"></h2>`;
-            id1.innerHTML = `<p></p> <p></p>`;
-            id2.innerHTML = `<p></p> <p></p>`;
-            id3.innerHTML = `<p></p> <p></p>`;
-            id4.innerHTML = `<p></p> <p></p>`;
-            id5.innerHTML = `<p></p> <p></p>`;
-            id6.innerHTML = `<p></p> <p></p>`;
-            id7.innerHTML = `<p></p> <p></p>`;
-            id8.innerHTML = `<p></p> <p></p>`;
+        case 'MacBook':
+            id1s.innerHTML = `<p>Processor</p><p>Apple M1 chip with 8-core CPU</p>`;
+            id2s.innerHTML = `<p>Graphics</p><p>8-core GPU</p>`;
+            id3s.innerHTML = `<p>Memory (RAM)</p><p>8GB or 16GB unified memory</p>`;
+            id4s.innerHTML = `<p>Storage</p><p>256GB, 512GB, 1TB, or 2TB SSD</p>`;
+            id1.innerHTML = `<p>Display</p> <p>13.3-inch Retina display with True Tone</p>`;
+            id2.innerHTML = `<p>Resolution</p> <p>2560 x 1600 pixels</p>`;
+            id3.innerHTML = `<p>Operating System</p> <p>macOS</p>`;
+            id4.innerHTML = `<p>Ports</p> <p>2 x Thunderbolt/USB 4 ports, 3.5mm headphone jack</p>`;
+            id5.innerHTML = `<p>Wireless Connectivity</p> <p>Wi-Fi 6, Bluetooth 5.0</p>`;
+            id6.innerHTML = `<p>FaceTime HD Camera</p> <p>720p resolution</p>`;
+            id7.innerHTML = `<p>Battery Life</p> <p>Up to 17 hours of web browsing</p>`;
+            id8.innerHTML = `<p>Weight</p> <p>Approximately 1.29 kg</p>`;
+            img.innerHTML = `<img src="assets/Laptop.jpg" style="width: 100%; height: auto;">`;
+            title.innerHTML = `<h2 class="mb-3" style="font-weight: 600; text-align: start">MacBook Pro M2 Max</h2>`;
+            cost.innerHTML = `<b>2,000,000₸</b>`;
+            break;
+        case 'GasStove':
+            id1s.innerHTML = `<p>Number of Burners</p><p>4</p>`;
+            id2s.innerHTML = `<p>Burner Types</p><p>1 High-Intensity, 2 Medium, 1 Simmer</p>`;
+            id3s.innerHTML = `<p>Ignition Type</p><p>Electronic Ignition</p>`;
+            id4s.innerHTML = `<p>Cooktop Material</p><p>Stainless Steel</p>`;
+            id1.innerHTML = `<p>Oven Capacity</p> <p>Large 5.0 cu. ft.</p>`;
+            id2.innerHTML = `<p>Oven Cooking Modes</p> <p>Bake, Broil, Convection Bake</p>`;
+            id3.innerHTML = `<p>Oven Temperature Range</p> <p>150°F to 500°F</p>`;
+            id4.innerHTML = `<p>Broiler Element Power</p> <p>14,000 BTU</p>`;
+            id5.innerHTML = `<p>Control Type</p> <p>Knobs</p>`;
+            id6.innerHTML = `<p>Safety Features</p> <p>Flame Failure Safety Device</p>`;
+            id7.innerHTML = `<p>Dimensions, cm</p> <p>76 x 60 x 90</p>`;
+            id8.innerHTML = `<p>Weight, kg</p> <p>50</p>`;
+            img.innerHTML = `<img src="assets/Gas-stove.jpg" style="width: 100%; height: auto;">`;
+            title.innerHTML = `<h2 class="mb-3" style="font-weight: 600; text-align: start">SMEG SR775PO</h2>`;
+            cost.innerHTML = `<b>323,000₸</b>`;
+            break;
+        case 'Refrigerator':
+            id1s.innerHTML = `<p>Capacity, liters</p><p>500</p>`;
+            id2s.innerHTML = `<p>Defrosting</p><p>No Frost</p>`;
+            id3s.innerHTML = `<p>Energy efficiency class</p><p>A++</p>`;
+            id4s.innerHTML = `<p>Shelves material</p><p>Glass</p>`;
+            id1.innerHTML = `<p>Dimensions, cm</p> <p>180x80x70</p>`;
+            id2.innerHTML = `<p>Temperature control</p> <p>Electronic</p>`;
+            id3.innerHTML = `<p>Number of doors</p> <p>2</p>`;
+            id4.innerHTML = `<p>Ice maker</p> <p>Yes</p>`;
+            id5.innerHTML = `<p>Material</p> <p>Stainless steel</p>`;
+            id6.innerHTML = `<p>Noise level, dB</p> <p>40</p>`;
+            id7.innerHTML = `<p>Weight, kg</p> <p>100</p>`;
+            img.innerHTML = `<img src="assets/Refrigerator.jpg" style="width: 100%; height: auto;">`;
+            title.innerHTML = `<h2 class="mb-3" style="font-weight: 600; text-align: start">Samsung RF-60A91R18A</h2>`;
+            cost.innerHTML = `<b>1,500,000₸</b>`;
             break;
     }
+
 </script>
 </body>
 </html>
