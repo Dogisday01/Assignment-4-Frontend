@@ -8,13 +8,16 @@ h1 {
 }
 
 .header {
-	font-family : "Open Sans", "Roboto", sans-serif !important;
-	font-style  : normal !important;
+	font-family : "IBM Plex Sans", sans-serif;
+	font-style  : italic;
+	color: black;
 }
 
 .description {
 	font-family : "IBM Plex Sans", sans-serif;
-	font-style  : normal;
+	font-size: 18px;
+	font-weight: 500;
+	font-style  : italic;
 }
 
 @font-face {
@@ -95,6 +98,7 @@ body {
 	opacity     : 100%;
 	padding-top : 3%;
 	text-align  : center;
+	
 }
 
 .img-fluid {
@@ -299,4 +303,28 @@ main {
 
 .login-register a:hover {
 	text-decoration : underline;
+}
+.white-field {
+	background-color: #F8F7FF;
+	border: solid 0;
+	border-radius: 15px 15px 15px 15px;
+	margin: 20px;
+	padding: 30px;
+	font-family: "Open Sans", "Roboto", sans-serif;
+	box-shadow       : 5px -5px 5px rgba(0, 0, 0, 0.25);
+}
+.separated {
+	border-bottom: solid 2px black;
+	margin : 30px 0;
+}
+.link-carousel-outer {
+	text-align: center;
+}
+.link-carousel-outer .socials a{
+	font-family: "IBM Plex Sans", sans-serif;
+	font-style: italic;
+	font-weight: bold;
+	font-size: 24px;
+	text-decoration: none;
+	color: black;
 }
